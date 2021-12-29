@@ -1,0 +1,17 @@
+{
+    "name": "Supreme Extension",
+    "description": "Don't show ads on Youtube and MakoTv",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["content.js"]
+        }
+    ]
+  }
